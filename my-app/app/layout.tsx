@@ -51,8 +51,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       
     <HardalProvider 
       config={{
-        website: "cmh4lut1e0008i90xj6hivu5r",
-        hostUrl: "https://cmh4lut1e0008i90xj6hivu5r-signal.usehardal.com"
+        website: process.env.NEXT_PUBLIC_WEBSITE || "cmh4lut1e0008i90xj6hivu5r",
+        hostUrl: process.env.NEXT_PUBLIC_HOSTURL || "https://cmh4lut1e0008i90xj6hivu5r-signal.usehardal.com"
       }}
       autoPageTracking={true}  // ✅ Tracks all route changes
     >
